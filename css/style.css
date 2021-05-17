@@ -1,0 +1,108 @@
+html{
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after{
+	box-sizing: inherit;
+	list-style-type: none;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: orange;
+	width: 1250px;
+}
+
+.search-box {
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	justify-content: center;
+}
+
+  #input {
+	padding: 15px 100px;
+	border-radius: 8px;
+  	-webkit-box-reflect: below 6px linear-gradient(transparent, #005);
+  	
+}
+
+#songList {
+	display: flex;
+	justify-content: space-between;
+	padding: 0;
+	margin: 0;
+	flex-wrap: wrap;
+}
+
+#songList li:before {
+	position: absolute;
+	content: "";
+	display: block;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,0.7);
+	z-index: 1;
+}
+
+#songList li {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	flex-shrink: 1;
+	padding: 15px;
+	border: 5px ridge #FF7287;
+	margin-bottom: 15px;
+	/*background-color: black;*/
+	color: white;
+	max-width: 350px;
+	min-height: 350px;
+}
+
+#songList li h3,
+#songList li a,
+#songList li div {
+	position: relative;
+	z-index: 2;
+	list-style-type: none;
+}
+
+img {
+	width: 100px;
+	height: 100px;
+	object-fit: cover;
+	border-radius: 15px;
+
+}
+
+#songList li div {
+	position: relative;
+	top: 80px;
+}
+#songList li h3 {
+	position: relative;
+	z-index: 2;
+	margin: 0;
+	display: inline-block;
+	font-size: 30px;
+	letter-spacing: 1px;
+}
+
+#btn {
+	padding: 15px 10px;
+	border-radius: 10px;
+	background-color: cyan;
+
+}
+#number {
+	margin-top: 50px;
+}
+
+#input:focus {
+	outline: none;
+}
